@@ -1,0 +1,13 @@
+<div [ngClass]="{container: true}">
+    <div [ngClass]="{util: true}">
+        <app-company-filter></app-company-filter>
+        <app-company-sort></app-company-sort>
+    </div>
+    <div [ngClass]="{list: true}">
+        <app-company-item
+            *ngFor="let company of companies$ | async"
+            [companyInfo]="company"
+            [routerLink]="['../detail', company.id]"
+        ></app-company-item>
+    </div>
+</div>

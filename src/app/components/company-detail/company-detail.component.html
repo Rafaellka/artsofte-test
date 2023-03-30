@@ -1,0 +1,12 @@
+<div [ngClass]="{container: true}">
+    <div [ngClass]="{logo: true}">
+        <img [src]="companyInfo.logo" alt="лого"/>
+    </div>
+    <div [ngClass]="{companyInfo: true}">
+        <div>Название: {{companyInfo.business_name}}</div>
+        <div>Вид деятельности: {{companyInfo.industry}}</div>
+        <div>Слоган: {{companyInfo.catch_phrase}}</div>
+        <div>Телефон: {{companyInfo.phone_number}}</div>
+        <div>Адрес: {{companyInfo.full_address}}</div>
+    </div>
+</div>

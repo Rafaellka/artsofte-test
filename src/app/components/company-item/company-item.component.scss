@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+  gap: 30px;
+  align-items: center;
+
+  .logo {
+    width: 60px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

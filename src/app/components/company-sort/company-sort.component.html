@@ -1,0 +1,14 @@
+<div [ngClass]="{container: true}">
+    <h2>Сортировать</h2>
+    <div [ngClass]="{buttons: true}">
+        <button
+            [ngClass]="{button: true}"
+            (click)="sort('business_name')">Название</button>
+        <button
+            [ngClass]="{button: true}"
+            (click)="sort('type')">Тип</button>
+        <button
+            [ngClass]="{button: true}"
+            (click)="sort('industry')">Вид деятельности</button>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div>
+    <h2>Фильтры</h2>
+    <form [formGroup]="filters" [ngClass]="{controls: true}">
+        <div>
+            <label>Название: </label>
+            <input
+                [ngClass]="{control: true}"
+                formControlName="name" />
+        </div>
+        <div>
+            <label>Тип: </label>
+            <select formControlName="type" [ngClass]="{control: true}">
+                <option value="All">Все компании</option>
+                <option *ngFor="let opt of typeOptions$ | async">{{opt}}</option>
+            </select>
+        </div>
+        <div>
+            <label>Вид деятельности: </label>
+            <select formControlName="industry" [ngClass]="{control: true}">
+                <option value="All">Все компании</option>
+                <option *ngFor="let opt of industryOptions$ | async">{{opt}}</option>
+            </select>
+        </div>
+    </form>
+</div>

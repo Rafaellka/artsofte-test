@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, div, span {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  all: unset;
+}
+
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

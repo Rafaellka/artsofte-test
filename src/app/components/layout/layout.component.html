@@ -1,0 +1,11 @@
+<div [ngClass]="{container: true}">
+    <div [ngClass]="{buttons: true}">
+        <button
+            [ngClass]="{button: true}"
+            routerLink="list">Список</button>
+        <button
+            [ngClass]="{button: true}"
+            routerLink="map">Показать на карте</button>
+    </div>
+    <router-outlet></router-outlet>
+</div>
