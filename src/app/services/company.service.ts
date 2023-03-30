@@ -1,21 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {BehaviorSubject} from "rxjs";
-import {IFilters} from "../components/company-filter/company-filter.component";
-
-export interface ICompany {
-    id: number;
-    business_name: string;
-    logo: string;
-    suffix: string;
-    industry: string;
-    catch_phrase: string;
-    type: string;
-    phone_number: string;
-    full_address: string;
-    longitude: number;
-    latitude: number;
-}
+import {IFilters} from "../interfaces/IFIlters";
+import {ICompany} from "../interfaces/ICompany";
 
 export type sortValue = 'business_name' | 'type' | 'industry';
 

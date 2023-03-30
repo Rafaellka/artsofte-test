@@ -2,12 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {CompanyService} from "../../services/company.service";
 import {BehaviorSubject} from "rxjs";
-
-export interface IFilters {
-    name: string;
-    type: string;
-    industry: string;
-}
+import {IFilters} from "../../interfaces/IFIlters";
 
 @Component({
     selector: 'app-company-filter',

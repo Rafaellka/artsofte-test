@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CompanyService, ICompany} from "../../services/company.service";
+import {CompanyService} from "../../services/company.service";
 import {BehaviorSubject} from "rxjs";
+import {ICompany} from "../../interfaces/ICompany";
 
 @Component({
     selector: 'app-company-list',

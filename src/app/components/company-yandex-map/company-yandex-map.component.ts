@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CompanyService, ICompany} from "../../services/company.service";
+import {CompanyService} from "../../services/company.service";
 import {BehaviorSubject} from "rxjs";
+import {ICompany} from "../../interfaces/ICompany";
 
 declare const ymaps: any;
 
@@ -13,8 +14,6 @@ export class CompanyYandexMapComponent implements OnInit {
     companies$: BehaviorSubject<ICompany[]>;
     map: any;
     balloon: any;
-    latitude = 41.3;
-    longitude = 69.3;
 
     constructor(private companyService: CompanyService) {
     }
@@ -27,7 +26,7 @@ export class CompanyYandexMapComponent implements OnInit {
 
     private createMap(): void {
         this.map = new ymaps.Map('map', {
-            center: [this.latitude, this.longitude],
+            center: [41.3, 69.3],
             zoom: 6,
             controls: ['fullscreenControl', 'zoomControl']
         }, {
