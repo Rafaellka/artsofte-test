@@ -21,8 +21,8 @@ export class CompanyFilterComponent implements OnInit {
             industry: 'All'
         });
 
-        this.filters.valueChanges.subscribe((value: IFilters) => {
-            this.companyService.filterCompanies(value);
+        this.filters.valueChanges.subscribe((flt: IFilters) => {
+            this.companyService.filterCompanies(flt);
         });
         /*
         this.filters.get('name')?.valueChanges.subscribe((value) => {
